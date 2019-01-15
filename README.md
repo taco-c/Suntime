@@ -1,5 +1,5 @@
 # Suntime
-Calculate sunrises and sunsets.
+Calculate sunrises and sunsets. In an arguably messy way. Also doesn't support midnight sun (days without sunset) or polar night (days without sunrise).
 
 ## Use
 Use it as a module. Suntime.py consists of three classes, where `Sun` is the main one. 
