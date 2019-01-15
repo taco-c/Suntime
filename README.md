@@ -1,6 +1,9 @@
 # Suntime
 Calculate sunrises and sunsets. In an arguably messy way. Also doesn't support midnight sun (days without sunset) or polar night (days without sunrise).
 
+Adapted from NOAA's solar calculations spreadsheets, found here:
+* https://www.esrl.noaa.gov/gmd/grad/solcalc/calcdetails.html
+
 ## Use
 Use it as a module. Suntime.py consists of three classes, where `Sun` is the main one. 
 
