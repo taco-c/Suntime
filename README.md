@@ -22,3 +22,27 @@ Timezone (name, hours, minutes, seconds)
 ```
 
 The `Sun` object will have the properties `sunrise`, `sunset`, and `noon`, which all will be `datetime` objects.
+
+## Example
+
+```python3
+import datetime
+import suntime
+
+# Datetime of today
+today = datetime.datetime.now()
+
+# Location
+rome = suntime.Location("Rome", 41.89, 12.48)
+
+# Time zone
+CET = suntime.TimeZone("CET", 1)
+
+sun = suntime.Sun(today, rome, CET)
+
+print(sun.sunrise)
+print(sun.noon)
+print(sun.sunset)
+
+print("Day lenght:", sun.sunset - sun.sunrise)
+```
